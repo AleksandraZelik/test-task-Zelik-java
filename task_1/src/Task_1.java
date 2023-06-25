@@ -7,11 +7,11 @@ public class Task_1 {
         boolean isValidInput = false;
 
         while (!isValidInput) {
-            System.out.print("Введите целое число: ");
+            System.out.print("Введите целое число, больше 7: ");
 
             String input = scanner.nextLine();
 
-            if (input.isEmpty() || !input.matches("\\d+")) {
+            if (!input.matches("\\d+")) {
                 System.out.println("Некорректный ввод данных");
                 continue;
             }
@@ -21,7 +21,9 @@ public class Task_1 {
             if (number > 7) {
                 System.out.println("Привет");
             } else {
-                System.out.println("Попробуйте ввести число больше 7:");
+                String errorMessage = number == 7 ? " равно " : " меньше ";
+
+                System.out.println(number + errorMessage + "7");
                 continue;
             }
 
