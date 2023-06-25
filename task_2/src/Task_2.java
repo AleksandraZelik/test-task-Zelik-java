@@ -12,7 +12,7 @@ public class Task_2 {
         while (true) {
             String name = scanner.nextLine();
 
-            if (name.isEmpty() || !name.matches("[a-zA-Zа-яА-Я]+")) {
+            if (!name.matches("[a-zA-Zа-яА-Я]+")) {
                 System.out.println("Неверный ввод данных. Введите имя.");
                 continue;
             }

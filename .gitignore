@@ -9,8 +9,6 @@
 .idea/*
 .idea
 .DS_Store
-**/out/
-out/
 *.class
 *.iml
 
@@ -19,7 +17,6 @@ out/
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
